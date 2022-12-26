@@ -1,0 +1,263 @@
+<-----------------------------HTML-------------------------->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="header">
+      <div class="header_up">
+        <h1>Zipandas</h1>
+
+        <div class="header_mid">
+          <p id="btm">Hair Studio</p>
+          <p>020 8845 5354</p>
+        </div>
+
+        <div class="navbar">
+          <ul class="navbtn">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Prices & Services</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Meet the team</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Special Offers</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="main_text">
+        <p><b>PROFESSIONAL</b></p>
+        <p>HAIR SALON IN</p>
+        <p>RUISLIP</p>
+        <p>...</p>
+      </div>
+    </div>
+
+    <div class="cubes">
+      <div class="cube_one">
+        <p>SPECIAL</p>
+        <p><b>OFFERS</b></p>
+        <p>READ MORE</p>
+      </div>
+
+      <div class="cube_two">
+        <p>WEDDING</p>
+        <p><b>PACKAGES</b></p>
+        <p>READ MORE</p>
+      </div>
+
+      <div class="cube_three">
+        <p>WHAT WE</p>
+        <p><b>OFFER</b></p>
+        <p>READ MORE</p>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="welcome_note">
+        <i> Welcome to Zipandas</i>
+        <br />
+        <div id="desc">
+          <p>Quality hairdressing in</p>
+          <p>South Ruislip</p>
+        </div>
+
+        <p id="lower_desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+          possimus? Exercitationem quisquam perferendis natus doloremque nisi
+          voluptate, placeat fugiat sit adipisci quis omnis itaque ea beatae
+          temporibus porro, dignissimos incidunt?
+        </p>
+      </div>
+
+      <div class="appointment">
+        <h3>BOOK AN</h3>
+        <h3>APPOINTMENT</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae,
+          consequatur repellat? Non maxime quas asperiores cum, et id expedita,
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+<-----------------------------CSS-------------------------->
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.header {
+  background-color: rgb(11, 81, 127);
+  padding: 15px 8%;
+}
+
+.header_up h1 {
+  font-size: 55px;
+}
+
+.header_mid {
+  display: flex;
+  justify-content: space-between;
+}
+
+#btm {
+  margin-left: 140px;
+  margin-top: 2px;
+  margin-top: -10px;
+}
+
+.navbar {
+  border-top: 1px solid white;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.navbtn {
+  display: flex;
+}
+
+.navbtn li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.navbtn li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-right: 1px solid white;
+}
+
+.navbtn li a:hover {
+  background-color: aqua;
+  border-radius: 5px;
+  color: black;
+  text-decoration: underline;
+}
+
+.main {
+  color: black;
+  background: url("images/bg_cover.jpg");
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 30px;
+  padding: 15vh;
+}
+
+.main_text {
+  margin-left: 850px;
+  font-size: 40px;
+}
+
+.cubes {
+  display: flex;
+  padding: 0px 20%;
+  margin-top: -45px;
+  justify-content: space-between;
+
+  padding-bottom: 15px;
+}
+
+.cube_one {
+  width: 250px;
+  height: 150px;
+  background: url("images/cube_one_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+
+.cube_two {
+  width: 250px;
+  height: 150px;
+  background: url("images/cube_two_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+
+.cube_three {
+  width: 250px;
+  height: 150px;
+  background: url("images/cube_three_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+
+.cubes p {
+  color: black;
+  font-size: 20px;
+}
+
+.cubes p > b {
+  color: black;
+  font-size: 20px;
+}
+
+.bottom {
+  padding: 10px 20%;
+  display: flex;
+}
+
+.appointment {
+  border: 2px dotted rgb(94, 94, 228);
+  margin-left: 35px;
+  padding: 10px;
+}
+
+.welcome_note i {
+  color: black;
+  font-size: large;
+  font-family: "Great Vibes", cursive;
+  font-size: 25px;
+}
+
+.welcome_note p {
+  color: black;
+}
+
+.welcome_note #desc {
+  color: black;
+  font-size: 25px;
+}
+
+#lower_desc {
+  color: grey;
+}
+
+.appointment h3 {
+  color: rgb(94, 94, 228);
+  text-align: center;
+}
+
+.appointment p {
+  color: gray;
+}
+
+.appointment:hover {
+  cursor: pointer;
+}
